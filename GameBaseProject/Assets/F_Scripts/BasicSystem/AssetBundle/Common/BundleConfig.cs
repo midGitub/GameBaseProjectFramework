@@ -178,48 +178,6 @@ namespace Best
             }
         }
 
-        /*
-        public string GetBundleUrlForAsyncLoad(string bundleName)
-        {
-            string path = PersistentDataPath;
-            string fileUrl;
-            StringBuilder sb = new StringBuilder();
-            sb.Remove(0, sb.Length);
-
-            sb.Append(path);
-            sb.Append("/");
-            sb.Append(BundlePlatformStr);
-            sb.Append("/");
-            sb.Append(bundleName);
-            fileUrl = sb.ToString();
-
-            if (File.Exists(fileUrl))
-            {
-                sb.Remove(0, sb.Length);
-                sb.Append("file:///");
-                sb.Append(fileUrl);
-
-                return sb.ToString();
-            }
-            //获取资源包在StreamingAssets目录下的url
-            else
-            {
-                path = StreamingAssetPath;
-
-                sb.Remove(0, sb.Length);
-                sb.Append(path);
-                sb.Append(AssetBundleDirectory);
-                sb.Append("/");
-                sb.Append(BundlePlatformStr);
-                sb.Append("/");
-                sb.Append(bundleName);
-                fileUrl = sb.ToString();
-
-                return fileUrl;
-            }
-        }
-    */
-
         public string GetSceneUrlForAsyncLoad(string bundleName)
         {
             string path = PersistentDataPath;

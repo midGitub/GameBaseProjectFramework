@@ -10,6 +10,7 @@ require "Framework/Notifier"
 require "Framework/Utils"
 require "Framework/Functions"
 require "Framework/logicLuaObjMgr"
+require "Common/config_data_center"
 
 String 			= System.String
 Screen			= UnityEngine.Screen
@@ -23,6 +24,7 @@ QualitySettings = UnityEngine.QualitySettings
 AudioClip		= UnityEngine.AudioClip
 MeshRenderer	= UnityEngine.MeshRenderer
 PlayerPrefs = UnityEngine.PlayerPrefs
+ProtobufDataConfigMgr = ProtobufDataConfig.ProtobufDataConfigMgr
 
 --游戏系统CS类
 GameKernel 		= Framework.GameKernel

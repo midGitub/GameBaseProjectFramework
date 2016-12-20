@@ -77,6 +77,9 @@ public static class LuaBinder
 		L.RegFunction("OnUnloadedHandler", Best_AssetBundleInfo_OnUnloadedHandler);
 		L.EndModule();
 		L.EndModule();
+		L.BeginModule("ProtobufDataConfig");
+		ProtobufDataConfig_ProtobufDataConfigMgrWrap.Register(L);
+		L.EndModule();
 		L.BeginModule("System");
 		L.RegFunction("Action", System_Action);
 		L.RegFunction("Predicate_int", System_Predicate_int);

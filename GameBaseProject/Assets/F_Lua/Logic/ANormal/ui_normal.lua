@@ -58,6 +58,8 @@ function this.ShowUI()
 	end
 
 	this.gameObject:SetActive(true)
+
+	TestConfig()
 end
 
 --[[--
@@ -72,4 +74,9 @@ end
 ]]
 function OnClickOpen()
 	ui_normal_click.ShowUI()
+end
+
+--Test config
+function TestConfig()
+	config_data_center.test()
 end

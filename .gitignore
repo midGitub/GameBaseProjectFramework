@@ -4,3 +4,16 @@ Temp
 UnityVS.meta
 UnityVS
 UnityVS.GameBaseProject.sln
+UnityVS.GameBaseProject.CSharp.csproj
+UnityVS.GameBaseProject.CSharp.Editor.csproj
+UnityVS.GameBaseProject.CSharp.Plugins.csproj
+UnityVS.GameBaseProject.v11.suo
+GameBaseProject-csharp.sln
+GameBaseProject.sln
+Assembly-CSharp-vs.csproj
+Assembly-CSharp-firstpass-vs.csproj
+Assembly-CSharp-firstpass.csproj
+Assembly-CSharp-Editor-vs.csproj
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+GameBaseProject-csharp.v11.suo

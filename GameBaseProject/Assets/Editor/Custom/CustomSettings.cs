@@ -6,6 +6,7 @@ using Best;
 
 using BindType = ToLuaMenu.BindType;
 using System.Reflection;
+using ProtobufDataConfig;
 
 public static class CustomSettings
 {
@@ -145,7 +146,8 @@ public static class CustomSettings
         _GT(typeof(UISys)),
         _GT(typeof(Best.AssetBundleInfo)),
         _GT(typeof(Best.LuaDestroyBundle)),
-        _GT(typeof(UIEventListener))
+        _GT(typeof(UIEventListener)),
+        _GT(typeof(ProtobufDataConfigMgr))
     };
 
     public static List<Type> dynamicList = new List<Type>()

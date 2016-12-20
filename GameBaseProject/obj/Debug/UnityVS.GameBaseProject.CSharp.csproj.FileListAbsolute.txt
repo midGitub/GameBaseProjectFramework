@@ -1,0 +1,13 @@
+C:\github\GameBaseProjectFramework\GameBaseProject\Temp\UnityVS_bin\Debug\Assembly-CSharp.dll
+C:\github\GameBaseProjectFramework\GameBaseProject\Temp\UnityVS_bin\Debug\Assembly-CSharp.pdb
+C:\github\GameBaseProjectFramework\GameBaseProject\Temp\UnityVS_bin\Debug\Debugger.dll
+C:\github\GameBaseProjectFramework\GameBaseProject\Temp\UnityVS_bin\Debug\UnityEditor.dll
+C:\github\GameBaseProjectFramework\GameBaseProject\Temp\UnityVS_bin\Debug\UnityEngine.dll
+C:\github\GameBaseProjectFramework\GameBaseProject\Temp\UnityVS_bin\Debug\UnityEngine.UI.dll
+C:\github\GameBaseProjectFramework\GameBaseProject\Temp\UnityVS_bin\Debug\Assembly-CSharp-firstpass.pdb
+C:\github\GameBaseProjectFramework\GameBaseProject\Temp\UnityVS_bin\Debug\UnityEngine.xml
+C:\github\GameBaseProjectFramework\GameBaseProject\Temp\UnityVS_bin\Debug\UnityEditor.xml
+C:\github\GameBaseProjectFramework\GameBaseProject\Temp\UnityVS_bin\Debug\UnityEngine.UI.xml
+C:\github\GameBaseProjectFramework\GameBaseProject\obj\Debug\UnityVS.GameBaseProject.CSharp.csprojResolveAssemblyReference.cache
+C:\github\GameBaseProjectFramework\GameBaseProject\obj\Debug\Assembly-CSharp.dll
+C:\github\GameBaseProjectFramework\GameBaseProject\obj\Debug\Assembly-CSharp.pdb
