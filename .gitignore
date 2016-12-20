@@ -1,3 +1,6 @@
 *.csproj
 Library
 Temp
+UnityVS.meta
+UnityVS
+UnityVS.GameBaseProject.sln
