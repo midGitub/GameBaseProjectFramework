@@ -114,7 +114,7 @@ namespace ProtobufDataConfig
             string fileUrl = string.Format("{0}{1}.bytes", BundleConfig.Instance.BundlesPathForPersist, filePath);
             if (!File.Exists(fileUrl))
             {
-                TextAsset textAsset = Resources.Load<TextAsset>(fileUrl);
+                TextAsset textAsset = Resources.Load<TextAsset>(filePath);
                 if (textAsset != null)
                 {
                     streamBytes = textAsset.bytes;

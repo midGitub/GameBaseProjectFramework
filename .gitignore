@@ -17,3 +17,6 @@ Assembly-CSharp-Editor-vs.csproj
 Assembly-CSharp-Editor.csproj
 Assembly-CSharp.csproj
 GameBaseProject-csharp.v11.suo
+UnityVS.GameBaseProject.v12.suo
+obj
+DesignTimeResolveAssemblyReferencesInput.cache
