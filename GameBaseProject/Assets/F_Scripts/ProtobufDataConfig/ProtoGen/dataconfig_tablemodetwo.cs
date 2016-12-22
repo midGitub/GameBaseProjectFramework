@@ -15,19 +15,19 @@ namespace dataconfig
   {
     public TableModeTwo() {}
     
-    private uint _PlayerLevel;
-    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"PlayerLevel", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
-    public uint PlayerLevel
+    private uint _ParaOne;
+    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"ParaOne", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public uint ParaOne
     {
-      get { return _PlayerLevel; }
-      set { _PlayerLevel = value; }
+      get { return _ParaOne; }
+      set { _ParaOne = value; }
     }
-    private uint _StrengthenLimit;
-    [global::ProtoBuf.ProtoMember(2, IsRequired = true, Name=@"StrengthenLimit", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
-    public uint StrengthenLimit
+    private uint _ParaTwo;
+    [global::ProtoBuf.ProtoMember(2, IsRequired = true, Name=@"ParaTwo", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public uint ParaTwo
     {
-      get { return _StrengthenLimit; }
-      set { _StrengthenLimit = value; }
+      get { return _ParaTwo; }
+      set { _ParaTwo = value; }
     }
     private global::ProtoBuf.IExtension extensionObject;
     global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)

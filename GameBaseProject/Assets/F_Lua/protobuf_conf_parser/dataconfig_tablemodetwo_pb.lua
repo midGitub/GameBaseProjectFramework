@@ -3,36 +3,36 @@ local protobuf = require "protobuf/protobuf"
 
 
 local TABLEMODETWO = protobuf.Descriptor();
-local TABLEMODETWO_PLAYERLEVEL_FIELD = protobuf.FieldDescriptor();
-local TABLEMODETWO_STRENGTHENLIMIT_FIELD = protobuf.FieldDescriptor();
+local TABLEMODETWO_PARAONE_FIELD = protobuf.FieldDescriptor();
+local TABLEMODETWO_PARATWO_FIELD = protobuf.FieldDescriptor();
 local TABLEMODETWOARRAY = protobuf.Descriptor();
 local TABLEMODETWOARRAY_ITEMS_FIELD = protobuf.FieldDescriptor();
 
-TABLEMODETWO_PLAYERLEVEL_FIELD.name = "PlayerLevel"
-TABLEMODETWO_PLAYERLEVEL_FIELD.full_name = ".dataconfig.TableModeTwo.PlayerLevel"
-TABLEMODETWO_PLAYERLEVEL_FIELD.number = 1
-TABLEMODETWO_PLAYERLEVEL_FIELD.index = 0
-TABLEMODETWO_PLAYERLEVEL_FIELD.label = 2
-TABLEMODETWO_PLAYERLEVEL_FIELD.has_default_value = true
-TABLEMODETWO_PLAYERLEVEL_FIELD.default_value = 0
-TABLEMODETWO_PLAYERLEVEL_FIELD.type = 13
-TABLEMODETWO_PLAYERLEVEL_FIELD.cpp_type = 3
+TABLEMODETWO_PARAONE_FIELD.name = "ParaOne"
+TABLEMODETWO_PARAONE_FIELD.full_name = ".dataconfig.TableModeTwo.ParaOne"
+TABLEMODETWO_PARAONE_FIELD.number = 1
+TABLEMODETWO_PARAONE_FIELD.index = 0
+TABLEMODETWO_PARAONE_FIELD.label = 2
+TABLEMODETWO_PARAONE_FIELD.has_default_value = true
+TABLEMODETWO_PARAONE_FIELD.default_value = 0
+TABLEMODETWO_PARAONE_FIELD.type = 13
+TABLEMODETWO_PARAONE_FIELD.cpp_type = 3
 
-TABLEMODETWO_STRENGTHENLIMIT_FIELD.name = "StrengthenLimit"
-TABLEMODETWO_STRENGTHENLIMIT_FIELD.full_name = ".dataconfig.TableModeTwo.StrengthenLimit"
-TABLEMODETWO_STRENGTHENLIMIT_FIELD.number = 2
-TABLEMODETWO_STRENGTHENLIMIT_FIELD.index = 1
-TABLEMODETWO_STRENGTHENLIMIT_FIELD.label = 2
-TABLEMODETWO_STRENGTHENLIMIT_FIELD.has_default_value = true
-TABLEMODETWO_STRENGTHENLIMIT_FIELD.default_value = 0
-TABLEMODETWO_STRENGTHENLIMIT_FIELD.type = 13
-TABLEMODETWO_STRENGTHENLIMIT_FIELD.cpp_type = 3
+TABLEMODETWO_PARATWO_FIELD.name = "ParaTwo"
+TABLEMODETWO_PARATWO_FIELD.full_name = ".dataconfig.TableModeTwo.ParaTwo"
+TABLEMODETWO_PARATWO_FIELD.number = 2
+TABLEMODETWO_PARATWO_FIELD.index = 1
+TABLEMODETWO_PARATWO_FIELD.label = 2
+TABLEMODETWO_PARATWO_FIELD.has_default_value = true
+TABLEMODETWO_PARATWO_FIELD.default_value = 0
+TABLEMODETWO_PARATWO_FIELD.type = 13
+TABLEMODETWO_PARATWO_FIELD.cpp_type = 3
 
 TABLEMODETWO.name = "TableModeTwo"
 TABLEMODETWO.full_name = ".dataconfig.TableModeTwo"
 TABLEMODETWO.nested_types = {}
 TABLEMODETWO.enum_types = {}
-TABLEMODETWO.fields = {TABLEMODETWO_PLAYERLEVEL_FIELD, TABLEMODETWO_STRENGTHENLIMIT_FIELD}
+TABLEMODETWO.fields = {TABLEMODETWO_PARAONE_FIELD, TABLEMODETWO_PARATWO_FIELD}
 TABLEMODETWO.is_extendable = false
 TABLEMODETWO.extensions = {}
 TABLEMODETWOARRAY_ITEMS_FIELD.name = "items"
@@ -76,8 +76,8 @@ end
 function tablemodetwo_x:ParseData(protobufData)
     for k, v in ipairs(protobufData.items) do 
         local item = {}
-        item.PlayerLevel = v.PlayerLevel
-        item.StrengthenLimit = v.StrengthenLimit
+        item.ParaOne = v.ParaOne
+        item.ParaTwo = v.ParaTwo
         table.insert(self.items, item)
     end
 end

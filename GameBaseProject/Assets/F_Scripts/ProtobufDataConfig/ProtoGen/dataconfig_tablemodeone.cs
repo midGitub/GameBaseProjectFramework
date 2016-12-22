@@ -15,60 +15,22 @@ namespace dataconfig
   {
     public TableModeOne() {}
     
-    private uint _Position;
-    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"Position", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
-    public uint Position
+    private uint _ParaOne;
+    [global::ProtoBuf.ProtoMember(1, IsRequired = true, Name=@"ParaOne", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public uint ParaOne
     {
-      get { return _Position; }
-      set { _Position = value; }
+      get { return _ParaOne; }
+      set { _ParaOne = value; }
     }
-    private uint _StrengthenLevel;
-    [global::ProtoBuf.ProtoMember(2, IsRequired = true, Name=@"StrengthenLevel", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
-    public uint StrengthenLevel
+    private uint _ParaTwo;
+    [global::ProtoBuf.ProtoMember(2, IsRequired = true, Name=@"ParaTwo", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
+    public uint ParaTwo
     {
-      get { return _StrengthenLevel; }
-      set { _StrengthenLevel = value; }
-    }
-    private uint _StrengthenRate = (uint)0;
-    [global::ProtoBuf.ProtoMember(3, IsRequired = false, Name=@"StrengthenRate", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
-    [global::System.ComponentModel.DefaultValue((uint)0)]
-    public uint StrengthenRate
-    {
-      get { return _StrengthenRate; }
-      set { _StrengthenRate = value; }
-    }
-    private uint _MaterialID = (uint)0;
-    [global::ProtoBuf.ProtoMember(4, IsRequired = false, Name=@"MaterialID", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
-    [global::System.ComponentModel.DefaultValue((uint)0)]
-    public uint MaterialID
-    {
-      get { return _MaterialID; }
-      set { _MaterialID = value; }
-    }
-    private uint _MaterialNum;
-    [global::ProtoBuf.ProtoMember(5, IsRequired = true, Name=@"MaterialNum", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
-    public uint MaterialNum
-    {
-      get { return _MaterialNum; }
-      set { _MaterialNum = value; }
-    }
-    private uint _Cost;
-    [global::ProtoBuf.ProtoMember(6, IsRequired = true, Name=@"Cost", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
-    public uint Cost
-    {
-      get { return _Cost; }
-      set { _Cost = value; }
-    }
-    private uint _FailAdd = (uint)0;
-    [global::ProtoBuf.ProtoMember(7, IsRequired = false, Name=@"FailAdd", DataFormat = global::ProtoBuf.DataFormat.TwosComplement)]
-    [global::System.ComponentModel.DefaultValue((uint)0)]
-    public uint FailAdd
-    {
-      get { return _FailAdd; }
-      set { _FailAdd = value; }
+      get { return _ParaTwo; }
+      set { _ParaTwo = value; }
     }
     private readonly global::System.Collections.Generic.List<dataconfig.TableModeOne.InternalType_AddAttrInfo> _AddAttrInfo = new global::System.Collections.Generic.List<dataconfig.TableModeOne.InternalType_AddAttrInfo>();
-    [global::ProtoBuf.ProtoMember(8, Name=@"AddAttrInfo", DataFormat = global::ProtoBuf.DataFormat.Default)]
+    [global::ProtoBuf.ProtoMember(3, Name=@"AddAttrInfo", DataFormat = global::ProtoBuf.DataFormat.Default)]
     public global::System.Collections.Generic.List<dataconfig.TableModeOne.InternalType_AddAttrInfo> AddAttrInfo
     {
       get { return _AddAttrInfo; }

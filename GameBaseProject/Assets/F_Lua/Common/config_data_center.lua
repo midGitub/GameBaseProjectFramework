@@ -38,12 +38,14 @@ function loadConfig(configName)
 	end
 
 	local protobufConfig = configProtobufDict[configName]:GetProtobuf()
-	
+	protobufConfig:ParseFromString(luaByteBuffer)
 
 	local protobufItems = configProtobufDict[configName].New()
-	protobufConfig:ParseData(protobufConfig)
-
+	protobufItems:ParseData(protobufConfig)
 	configProtobufItemsDict[configName] = protobufItems.items
+
+	protobufConfig:Clear()
+	protobufConfig = nil
 end
 
 --[[--
@@ -62,6 +64,6 @@ function this.test()
 	local tableConfig = this.loadConfigByName("dataconfig_tablemodeone")
 	Trace("length:"..#tableConfig)
 	for i = 1,#tableConfig do
-		Trace("position:"..tableConfig[Position])
+		Trace("position:"..tableConfig.ParaOne)
 	end
 end
