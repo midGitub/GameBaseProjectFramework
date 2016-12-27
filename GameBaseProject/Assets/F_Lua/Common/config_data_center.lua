@@ -57,13 +57,3 @@ function this.loadConfigByName(configName)
 	end
 	return nil
 end
-
-function this.test()
-	loadConfig("dataconfig_tablemodeone")
-
-	local tableConfig = this.loadConfigByName("dataconfig_tablemodeone")
-	Trace("length:"..#tableConfig)
-	for i = 1,#tableConfig do
-		Trace("position:"..tableConfig.ParaOne)
-	end
-end
