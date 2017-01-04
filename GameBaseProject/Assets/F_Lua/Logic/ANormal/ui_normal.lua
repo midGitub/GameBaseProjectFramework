@@ -80,7 +80,7 @@ end
 function TestConfig()
 	loadConfig("dataconfig_tablemodeone")
 
-	local tableConfig = this.loadConfigByName("dataconfig_tablemodeone")
+	local tableConfig = config_data_center.loadConfigByName("dataconfig_tablemodeone")
 	Trace("length:"..#tableConfig)
 	for i = 1,#tableConfig do
 		Trace("position:"..tableConfig[i].ParaOne)
